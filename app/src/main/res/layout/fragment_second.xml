@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon_stol"
+    android:theme="@style/ThemeOverlay.AnimGlass.FullscreenContainer"
+    tools:context=".SecondFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/glass_two"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="280dp"
+        android:src="@drawable/glass_red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/glass_one"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="200dp"
+        android:src="@drawable/glass_red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/glass_there"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="280dp"
+        android:src="@drawable/glass_red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_click"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ball_one"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/ball"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/glass_one"
+        app:layout_constraintEnd_toEndOf="@id/glass_one"
+        app:layout_constraintStart_toStartOf="@id/glass_one"
+        app:layout_constraintTop_toTopOf="@id/glass_one" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ball_two"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/ball"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/glass_two"
+        app:layout_constraintEnd_toEndOf="@id/glass_two"
+        app:layout_constraintStart_toStartOf="@id/glass_two"
+        app:layout_constraintTop_toTopOf="@id/glass_two" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ball_there"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/ball"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/glass_there"
+        app:layout_constraintEnd_toEndOf="@id/glass_there"
+        app:layout_constraintStart_toStartOf="@id/glass_there"
+        app:layout_constraintTop_toTopOf="@id/glass_there" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
